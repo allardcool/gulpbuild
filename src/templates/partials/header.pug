@@ -1,0 +1,21 @@
+.header-block#block1
+    .top
+        .header-title
+            .subtitle
+                p Main title
+            .title
+                p Subtitle description
+    .menu
+        .header-content
+            .logo
+                a.header-logo(href='#')
+                    img(src="./img/logo.png", alt="Logo")
+            a.button(href='#')
+            .phone
+                p: a(href="tel:" + siteinfo.phone_number)=siteinfo.phone_format
+            .menu
+                ul.header-menu
+                    li.item: p: a.menu-link.scroll-to(href="#block1") Block1
+                    li.item: p: a.menu-link.scroll-to(href="#block2") Block2
+                    li.item: p: a.menu-link.scroll-to(href="#block3") Block3
+

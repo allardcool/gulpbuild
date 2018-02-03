@@ -1,0 +1,32 @@
+.order-bg
+    .order-block
+        .title#block2
+            h1 Lorem Ipsum
+        .subtitle
+            p.
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        form.form.order-form
+            .order-item
+                .item
+                    label.label-input(for='form-name') Name *
+                    input.input-element(name='name' type='text' id='form-name' placeholder='Name' required)
+                .item
+                    label.label-input(for='form-phone') Phone *
+                    input.input-element(name='phone' type='tel' id='form-phone' placeholder='+0' required)
+                .item
+                    label.label-input(for='form-email') Email *
+                    input.input-element(name='email' type='email' id='form-email' placeholder='Email')
+                .item
+                    label.label-input(for='form-comments') Comments or questions
+                    textarea.textarea-element(name='comments' id='form-comments' placeholder='Write your comments or questions')
+                .item
+                    button.button-element(type='submit') Send
+                .item
+                    p: a.link.modal-open(href="#policy") Privacy Policy
+
+        .infotext
+            i
+            | <sup>1</sup> It has survived not only five centuries, but also the leap into electronic typesetting,
+            | remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            | containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            | including versions of Lorem Ipsum.

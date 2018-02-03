@@ -1,0 +1,18 @@
+doctype html
+include ./modules/variables.pug
+html(lang=siteinfo.language)
+    head
+        include ./modules/title.pug
+        include ./modules/favicon.pug
+        link(rel="stylesheet", type="text/css", href="./css/main.css?v=" + siteinfo.compile_time)
+        include ./modules/gtag.pug
+    body
+        .main
+            include ./partials/header.pug
+            include ./partials/screen.pug
+            include ./partials/order.pug
+            include ./partials/contacts.pug
+            include ./partials/footer.pug
+
+        script(type="text/javascript", src="./js/libs.js?c=" + siteinfo.compile_time)
+        script(type="text/javascript", src="./js/script.js?c=" + siteinfo.compile_time)

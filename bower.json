@@ -1,0 +1,22 @@
+{
+  "name": "project_creator",
+  "description": "ProjectCreator",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2",
+    "jquery.maskedinput": "^1.4.1"
+  },
+  "devDependencies": {}
+}

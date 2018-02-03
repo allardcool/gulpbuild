@@ -1,0 +1,35 @@
+.checkbox-block
+  position relative
+  height 25px
+  line-height 25px
+  padding 0
+  > input
+    absolute top 0 left 0
+    size 100%
+    display block
+    opacity 0
+    z-index 4
+    cursor pointer
+  > label
+    display block
+    padding-left 38px
+    line-height 25px
+    transition color $speed-anim ease-in-out
+    -webkit-transform translateZ(0)
+    &:after, &:before
+      content ''
+      absolute top 0 left 0
+      size 25px
+      transition opacity $speed-anim ease-in-out
+      -webkit-transform translateZ(0)
+      //background url(../img/checkbox-img.png) no-repeat
+    &:after
+      opacity 1
+    &:before
+      background-position 0 100%
+      opacity 0
+  > input:checked + label
+    &:after
+      opacity 0
+    &:before
+      opacity 1

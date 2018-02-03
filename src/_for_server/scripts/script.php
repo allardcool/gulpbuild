@@ -1,0 +1,3 @@
+<?php
+
+// any other script

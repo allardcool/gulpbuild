@@ -1,0 +1,195 @@
+.header-block
+  height 160px
+  @media (max-width $screen-lt)
+    height 59px
+  > .top
+    height 90px
+    background $color-cyan
+    @media (max-width $screen-lt)
+      display none
+  > .menu
+    position relative
+    size 100% 70px
+    background $color-white
+    transition all $speed-anim ease-in-out
+    transform translateZ(0)
+    z-index 99
+    @media (max-width $screen-lt)
+      height auto
+      position fixed
+      top 0
+      box-shadow 0 3px 6px 0 rgba(0, 0, 0, 0.5)
+    &.-fixed
+      position fixed
+      top 0
+      box-shadow 0 3px 6px 0 rgba(0, 0, 0, 0.5)
+
+.header-title
+  @extend .container
+  padding-top 25px
+  fontRobotoCondensed()
+  text-transform uppercase
+  font-weight 700
+  color $color-white
+  > .subtitle
+    margin-left 20%
+    font-size 16px
+    letter-spacing 0.02em
+    line-height 1.5
+  > .title
+    margin-left 20%
+    font-size 30px
+    letter-spacing -0.01em
+    line-height 1.1
+    @media (max-width 870px)
+      font-size 26px
+
+.header-content
+  @extend .container
+  clearfix()
+  @media (max-width $screen-lt)
+    padding 0
+    min-width 320px
+  > .logo
+    float left
+    width 20%
+    @media (max-width $screen-lt)
+      width 80px
+      margin-bottom 2px
+      padding-left 20px
+    @media (max-width 400px)
+      width 60px
+      padding-left 10px
+      margin-bottom 2px
+  > .menu
+    float left
+    padding 23px 0 0
+    width 60%
+    @media (max-width $screen-lt)
+      float none
+      padding 0
+      margin 0
+      width 100%
+      display none
+      clear both
+      &.-active
+        display block
+  > .button
+    display none
+    border-bottom none
+    &:hover
+      border-bottom none
+    @media (max-width $screen-lt)
+      display block
+      float right
+      size 70px 50px
+      color $color-dark
+      font-size 20px
+      text-align center
+      padding 20px 14px 0 10px
+      fontIconmoon(menu)
+      &.-close
+        fontIconmoon(close)
+  > .phone
+    float right
+    width 20%
+    padding 23px 0 0
+    line-height 22px
+    fontRobotoCondensed()
+    font-size 20px
+    font-weight 700
+    text-align right
+    @media (max-width 870px)
+      font-size 18px
+    @media (max-width $screen-lt)
+      width auto
+      margin 0 70px
+      float none
+      text-align center
+      padding 19px 0 0
+      font-size 24px
+    @media (max-width 400px)
+      font-size 22px
+      padding 21px 0 0
+    a
+      color $color-dark
+      border-bottom none
+      &:hover
+        color $color-dark
+        border-bottom none
+
+.header-logo
+  display block
+  margin -42% auto 0
+  width 74%
+  transition all $speed-anim ease-in-out
+  transform translateZ(0)
+  border-bottom none
+  &:hover
+    border-bottom none
+  @media (max-width $screen-lt)
+    margin 1px auto 0
+    width 60px
+  > img
+    display block
+    max-height 100%
+    max-width 100%
+
+.header-block > .menu.-fixed .header-logo
+  margin 1px auto 0
+  width 33%
+  @media (max-width 920px)
+    width 38%
+  @media (max-width 840px)
+    width 44%
+  @media (max-width $screen-lt)
+    width 60px
+  @media (max-width 400px)
+    padding 5px 0 0
+    width 60px
+
+.header-menu
+  list-style none
+  margin 0
+  padding 0
+  @media (max-width $screen-lt)
+    display block
+    background $color-white
+    width 100%
+    padding 0
+    z-index 1
+  > .item
+    padding 0
+    float left
+    @media (max-width $screen-lt)
+      float none
+      overflow hidden
+      border-top 1px solid #b5b5b5
+    + .item
+      margin-left 10%
+      @media (max-width 1010px)
+        margin-left 7%
+      @media (max-width 920px)
+        margin-left 5%
+      @media (max-width $screen-lt)
+        margin 0
+
+.menu-link
+  color $color-dark
+  font-size 18px
+  line-height 1.1
+  border-bottom 1px solid rgba(200, 200, 200, 1)
+  transition all $speed-anim ease-in-out
+  transform translateZ(0)
+  &:hover
+    color #555555
+    border-bottom 1px solid rgba(200, 200, 200, 0)
+  @media (max-width 870px)
+    font-size 16px
+  @media (max-width $screen-lt)
+    font-size 18px
+    padding 16px 0 16px 20px
+    display block
+    border-bottom none
+    &:hover
+      border-bottom none

@@ -1,0 +1,18 @@
+// Responsive image
+img-responsive($display = block)
+  display $display
+  max-width 100%
+  height auto
+
+hide-text()
+  overflow hidden
+  text-indent 150%
+  white-space nowrap
+
+clearfix()
+  &:after
+  &:before
+    content ""
+    display table
+  &:after
+    clear both

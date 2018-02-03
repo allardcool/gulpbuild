@@ -1,0 +1,30 @@
+meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+title #{siteinfo.title}
+meta(name='keywords', content=siteinfo.keywords)
+meta(name='description', content=siteinfo.description)
+meta(name='application-name', content=siteinfo.title)
+meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+meta(name='format-detection', content='telephone=no')
+meta(name='SKYPE_TOOLBAR', content='SKYPE_TOOLBAR_PARSER_COMPATIBLE')
+//- Open Graph
+meta(property='og:type', content='website')
+meta(property='og:url', content='https://'+ siteinfo.domain)
+meta(property='og:site_name', content=siteinfo.title)
+meta(property='og:image', content=siteinfo.imgUrl)
+meta(property='og:title', content=siteinfo.title)
+meta(property='og:description', content=siteinfo.description)
+meta(name='twitter:card', content='summary')
+//- facebook
+meta(property='fb:app_id', content='0000000000000000')
+//- google meta
+meta(property='place:location:latitude', content=siteinfo.latitude)
+meta(property='place:location:longitude', content=siteinfo.longitude)
+meta(property='business:contact_data:street_address', content=siteinfo.street_address)
+meta(property='business:contact_data:locality', content=siteinfo.locality)
+meta(property='business:contact_data:postal_code', content=siteinfo.postal_code)
+meta(property='business:contact_data:country_name', content=siteinfo.country_name)
+meta(property='business:contact_data:phone_number', content=siteinfo.phone_number)
+meta(property='business:contact_data:website', content='https://'+siteinfo.url)
+//- yandex verification
+meta(name='yandex-verification', content='0000000000000000')
