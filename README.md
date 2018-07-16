@@ -7,7 +7,7 @@ In the project there is no minimization of images, because I use external softwa
 ## Installation
 ```
 $ npm install
-$ npm install bower
+$ npm install -g bower
 $ bower install
 ```
 
