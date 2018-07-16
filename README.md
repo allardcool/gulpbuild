@@ -6,8 +6,10 @@ In the project there is no minimization of images, because I use external softwa
 
 ## Installation
 ```
-$ npm install
 $ npm install -g bower
+$ npm install -g gulp
+$ npm install -g gulp-cli
+$ npm install
 $ bower install
 ```
 
