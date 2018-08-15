@@ -7,7 +7,7 @@ In the project there is no minimization of images, because I use external softwa
 ## Installation
 Install soft: Node.js - https://nodejs.org/en/ Git - https://git-scm.com/download  
 Create a project in your IDE.  
-Copy the project with git: git+https://github.com/allardcool/gulpbuild.git  
+Copy the project with git: git clone https://github.com/allardcool/gulpbuild.git  
 Install the packages through npm:  
 
 ```
